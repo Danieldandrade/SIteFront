@@ -74,6 +74,7 @@ button{
     display: inline;
     margin-left: 70%;   
 }
+
 .menu a{
     
     text-decoration: none;
@@ -139,9 +140,10 @@ h2{
 
 /* Estilos para o rodapé */
 footer {
-    background-color: var(--verde);
+    background:linear-gradient(#381686,#0ABF04 ) ;
     color: #fff;
     padding: 20px 0;
+    
      
 }
 
@@ -189,8 +191,14 @@ footer {
 .footer-social a:hover {
     color: var(--dark); /* Cor de destaque ao passar o mouse */
 }
+.valores{
+    background:linear-gradient(#381686, black) ;
+    border-radius: 50px;
+    color: #0ABF04;
+    
+}
 .img{
     padding: 1px;
     margin: 1px;
-    border: 2px solid white;
+    
 }
