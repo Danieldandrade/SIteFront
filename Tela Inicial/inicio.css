@@ -22,73 +22,85 @@
 
 /*Cor principal do site*/
 body{
-    color: var(--white);
-    background: var(--dark);
-    padding: 0;
-    border: 0;
-    margin: 0;
+    background:var(--dark);
+    border-top: 20px;
+    height: 100%;
+    padding: 100px ;   
+    color: #fff;
 }
+.theme-light{
+    background: #fff;
+    color: #000;
+
+   
+}
+.theme-dark{
+    background:#000;
+    color: #fff;
+
+}
+button{
+    background: white;
+    border-radius: 50%;
+    height: 50%;
+    display: inline;
+    margin-left: 60%;   
+}
+      
 
 /*Configurações da barra de navegação*/
 
-.navigation{
+.menu{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;;
+    background: linear-gradient(#0ABF04,#381686 ); 
+    margin: 2px solid white;
+    ;
+    
+}
+.menu li{
+    display: inline;
+    
+}
+
+.nav{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 18px 40px;
+    position: fixed;
+    
+    
+    
+   
     
     width: 100%;
-    background: var(--verde);
-    transition: all 0.5s;
-    position: fixed;
+    height: 100px;
 }
-/*Confg Logo*/
-
-.navigation .logo{
-    color: var(--white);
-    font-size: 1.7rem;
-    font-weight: 600;
+button{
+    background: white;
+    border-radius: 50%;
+    height: 50%;
+    display: inline;
+    margin-left: 70%;   
 }
 
-/*config listas(Logo ,sobre nós, contatos , pesquisa...  )*/
-.navigation ul{
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+.menu a{
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #fff;
+    font-size: 15px;
 }
-.navigation ul li a{
-    color: var(--white);
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s;
-}
-.navigation ul li a:hover{
+.menu a:hover{
     color: var(--verdeclaro);
-}
-
-.navigation i{
     cursor: pointer;
-    font-size: 1.5rem;
 }
-
-.menu{
-    cursor: pointer;
-    display: none;
+.menu .logo{
+    font-size: 30px;
 }
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--dark);
-    margin: 5px auto;
-    transition: all 0.3s;
-}
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-    background: var(--red);
-}
-
 /*Configurações do corpo principal*/
 
 /*Config geral*/
@@ -116,7 +128,7 @@ body{
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
-    color: var(--white);
+    
     text-shadow: 3px 3px 3px #0ABF04;
 }
 
@@ -199,6 +211,7 @@ body{
     .home .text-h1{
         font-size: 2.5rem;
         line-height: 3rem;
+        
     }
     .home p{
         font-size: 15px;
@@ -211,9 +224,10 @@ body{
 
 /* Estilos para o rodapé */
 footer {
-    background-color: var(--verde);
+    background:linear-gradient(#381686,#0ABF04 ) ;
     color: #fff;
     padding: 20px 0;
+    
      
 }
 
