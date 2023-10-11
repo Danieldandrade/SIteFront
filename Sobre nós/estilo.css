@@ -20,9 +20,17 @@ body{
     background:var(--dark);
     border-top: 20px;
     height: 100%;
-    padding: 110px ;   
+    padding: 100px ;   
     color: #fff;
 }
+@media(min-width:576px)and(max-width:768px) {
+    body{
+        margin: none;
+    }
+    
+}
+
+
 .theme-light{
     background: #fff;
     color: #000;
@@ -90,6 +98,10 @@ button{
 .menu .logo{
     font-size: 30px;
 }
+.conteiner{
+    display: grid;
+ 
+}
 .nos{
     background:linear-gradient(#381686, black) ;
     border-radius: 0  0 50px 50px ;
@@ -98,11 +110,53 @@ button{
     color: #ffffff;
     text-shadow:3px 3px 3px #0ABF04;
 }
-h1{
-    text-align: center;
+@media (max-width:400px) {
+    .nos{
+        
+        font-size: 35px;
+        margin-top: 35px;
+        margin-left: -100px;
+        margin-right: -80px;     
+ 
+    }
+    .tituloh2{
+        
+        font-size: 35px;
+        margin-top: 35px;
+        margin-left: -100px;
+        margin-right: -80px;     
+ 
+    }
+    .tituloh3{
+        
+        font-size: 35px;
+        margin-top: 35px;
+        margin-left: -100px;
+        margin-right: -80px;     
+ 
+    }
+    .valores{
+        
+        font-size: 35px;
+        margin-top: 35px;
+        margin-left: -100px;
+        margin-right: -80px;     
+ 
+    }
+    footer{
+        
+        font-size: 35px;
+        margin-top: 35px;
+        margin-left: -100px;
+        margin-right: -80px;     
+ 
+    }
+    .conteiner{
     
-    text-shadow: 2px 2px #0ABF04;
+    }
+    
 }
+
 h3{
     color:var(--verde);
     text-align: center;
@@ -116,6 +170,7 @@ h2{
 }
 .figure{
    border: solid white;
+   margin-bottom: 4rem;
 
 }
 p{
@@ -130,9 +185,17 @@ h2{
 .col-2{
     text-align: center ;
     padding-top: 50px;
+    margin-bottom: 4rem;
     
 }
 
+.valores{
+    background:linear-gradient(#381686, black) ;
+    border-radius: 50px;
+    color: #0ABF04;
+    text-align: center;
+    
+}
 
 
 
@@ -191,14 +254,4 @@ footer {
 .footer-social a:hover {
     color: var(--dark); /* Cor de destaque ao passar o mouse */
 }
-.valores{
-    background:linear-gradient(#381686, black) ;
-    border-radius: 50px;
-    color: #0ABF04;
-    
-}
-.img{
-    padding: 1px;
-    margin: 1px;
-    
-}
+
