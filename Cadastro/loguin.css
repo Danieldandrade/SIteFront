@@ -8,6 +8,7 @@
     
  }
  body{
+   background: black;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -32,7 +33,7 @@
  
  form{
     position: absolute;
-    margin: 80px;
+    margin-top: 80px;
     transition: .5s;
     width: 300px;
     height: 400px;
@@ -49,7 +50,7 @@
     background: transparent;
     border: none;
     position: relative;
-    padding: 10px 29px;
+    padding: 10px 20px;
  }
  .btnColor{
     position: absolute;
@@ -79,9 +80,9 @@
     margin-top: 40px; 
     cursor: pointer;
  }
- .divCheck{
+  .divCheck{
     margin: 10px 0 0 5px ;
-    width: 80px;
+    width: 80%;
     font-size: 13px;
  } 
  #entrar{

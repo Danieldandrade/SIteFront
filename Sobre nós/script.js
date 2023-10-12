@@ -15,7 +15,7 @@ var formEntrar = document.querySelector('#entrar');
 var formCadastro = document.querySelector('#cadastro');
 var btnColor = document.querySelector('.btnColor');
 
-document.querySelector('#btnSingIn')
+document.querySelector('#btnEntrar')
 .addEventListener('click', () =>{
     formEntrar.style.left = "25px";
     formCadastro.style.left = "450px";
