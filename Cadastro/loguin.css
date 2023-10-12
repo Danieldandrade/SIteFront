@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Zeyada&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
+    
+ }
+ body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+ .container{
+    background-color: rgb(231, 237, 226);
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgb(104, 255, 104);
+ }
+ 
+ form{
+    position: absolute;
+    margin: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+ }
+
+ .buttonsForm{
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 rgb(104, 255, 104);
+ }
+ .buttonsForm button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+ }
+ .btnColor{
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #039d22,#97e59c);
+    border-radius: 30px;
+    transition: .3s;
+ }
+ input[type="text"], input[type="password"]{
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+ }
+ button[type="submit"]{
+    background: #039d22;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px ;
+    margin-top: 40px; 
+    cursor: pointer;
+ }
+ .divCheck{
+    margin: 10px 0 0 5px ;
+    width: 80px;
+    font-size: 13px;
+ } 
+ #entrar{
+    left: 25px;
+ }
+ #cadastro{
+    left: 450px;
+ }
+ i{
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+ }
+ .fa-envelope{
+    top:40px;
+ }
+ .fa-lock{
+    top: 114px;
+ }
+ .fa-lock2{
+    top: 190px;
+ }
