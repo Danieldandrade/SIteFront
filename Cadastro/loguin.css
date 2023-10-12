@@ -16,9 +16,20 @@
     justify-content: center;
     
  }
+ .theme-light{
+   background: #fff;
+   color: #000;
+
+  
+}
+.theme-dark{
+   background:#000;
+   color: #fff;
+
+}
 
  .container{
-    background-color: rgb(231, 237, 226);
+    background-color: rgb(208, 216, 205);
     padding: 6px;
     width: 350px;
     height: 450px;
@@ -54,7 +65,7 @@
  }
  .btnColor{
     position: absolute;
-    width: 108px;
+    width: 120px;
     height: 100%;
     background: linear-gradient(to right, #039d22,#97e59c);
     border-radius: 30px;
@@ -69,7 +80,7 @@
     width: 100%;
  }
  button[type="submit"]{
-    background: #039d22;
+    background: #006b20;
     color: white;
     border-radius: 30px;
     width: 100%;
@@ -105,3 +116,12 @@
  .fa-lock2{
     top: 190px;
  }
+ img{
+   position: relative;
+   cursor: pointer;
+   background: white;
+   border-radius: 50%;
+   display: inline;
+   border: none;
+      
+}
