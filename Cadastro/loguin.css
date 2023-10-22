@@ -1,14 +1,7 @@
  /*Fontes utilizadas no site*/
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap');
  /*Configuração geral do site*/
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-}
+
 /*Variações de cores para utilizar no site*/
 :root{
     --red:#d63a25;
@@ -20,15 +13,32 @@
     --verdeclaro:#00ff88;
 }
 
-/*Cor principal do site*/
-body{
-    background:var(--dark);
-    border-top: 20px;
-    height: 100%;
-    padding: 100px ;   
-    color: #fff;
-    margin: 100px;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   list-style: none;
+   text-decoration: none;
 }
+
+body{
+   background:var(--dark);
+   border-top: 20px;
+   color: #fff;
+   
+   margin-top: 50px;
+   padding: 70px ;   
+   height: 100%;
+
+}
+@media(min-width:576px)and(max-width:768px) {
+   body{
+       margin: none;
+   }
+   
+}
+
  .theme-light{
    background: #fff;
    color: #000;
@@ -88,14 +98,19 @@ body{
 .menu .logo{
    font-size: 30px;
 }
+.text1{
+   text-align: center;
+   
+}
 
  .container{
-    background-color: rgb(208, 216, 205);
+    background-color: rgb(206, 216, 205);
     padding: 6px;
     width: 350px;
-    height: 450px;
-    margin-bottom: 150px;
-    z-index: -1;
+    height: 500px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+   
     
     display: flex;
     flex-direction: column;
@@ -194,6 +209,8 @@ footer {
    background:linear-gradient(#381686,#0ABF04 ) ;
    color: #fff;
    padding: 20px 0;
+   margin-bottom: 0;
+   
    
 }
 
