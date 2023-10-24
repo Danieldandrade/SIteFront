@@ -98,6 +98,21 @@ body{
 .menu .logo{
    font-size: 30px;
 }
+
+.fa-circle-half-stroke{
+   
+   margin:-25px;
+   border-radius: 50%;
+   height: 50%;
+   display: inline;
+   margin-left: 70%; 
+}
+.fa-circle-half-stroke a:hover{
+   color: var(--verdeclaro);
+   cursor: pointer;
+}
+
+
 .text1{
    text-align: center;
    
@@ -140,7 +155,7 @@ body{
     background: transparent;
     border: none;
     position: relative;
-    padding: 10px 20px;
+    padding: 10px 23px;
  }
  .btnColor{
     position: absolute;
