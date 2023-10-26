@@ -59,7 +59,7 @@ body{
    width: 100%;;
    background: linear-gradient(#0ABF04,#381686 ); 
    margin: 2px solid white;
-   
+   ;
    
 }
 .menu li{
@@ -87,7 +87,6 @@ body{
    text-decoration: none;
    text-transform: uppercase;
    margin: 10px;
-   
    color: #fff;
    font-size: 15px;
 }
@@ -98,21 +97,20 @@ body{
 .menu .logo{
    font-size: 30px;
 }
-
 .fa-circle-half-stroke{
-   
+  
    margin:-25px;
    border-radius: 50%;
    height: 50%;
-   display: inline;
-    
+   display: inline; 
+   position: relative;
    color: #fff;
+
 }
 .fa-circle-half-stroke a:hover{
-   color: var(--verde);
+   color: var(--verdeclaro);
    cursor: pointer;
 }
-
 
 .text1{
    text-align: center;
@@ -161,7 +159,7 @@ body{
     background: transparent;
     border: none;
     position: relative;
-    padding: 10px 23px;
+    padding: 10px 25px;
  }
  .btnColor{
     position: absolute;

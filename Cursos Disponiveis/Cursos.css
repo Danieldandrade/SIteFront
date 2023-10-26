@@ -1,97 +1,112 @@
 
-
 :root{
     --red:#d63a25;
     --white:#fff;
-    --dark:#1e1c2a;
+    --dark:#000000;
     --blue:#00008b;
     --roxo:#201b2c;
-    --verde:#77ffc0;
+    --verde:#0ABF04;
     --verdeclaro:#00ff88;
 }
-
-body{
-    color: var(--dark);
-    background: var(--roxo);
-}
-.navigation {
-    position: fixed; /* Define a barra de navegação como fixa */
-    top: 0; /* Coloca a barra de navegação no topo da janela */
-    left: 0; /* Alinha a barra de navegação à esquerda */
-    right: 0; /* Alinha a barra de navegação à direita */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
-    width: 100%;
-    background: var(--white);
-    transition: all 0.5s;
-    z-index: 1000; /* Define uma ordem de empilhamento alto para a barra de navegação */
-}
-.navigation .logo{
-    color: var(--roxo);
-    font-size: 1.7rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-.navigation ul{
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-}
-.navigation ul li a{
-    list-style-type: none;/*Remove os marcadores dos itens de uma lista*/
-    color: var(--roxo);
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s;
-    text-decoration: none;
-}
-/*retirar os pontos da lista*/
-.navmenu{
-    list-style-type: none;
-}
-.navigation ul li a:hover{
-    color: var(--verdeclaro);
-}
-.navigation i{
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.menu{
-    cursor: pointer;
-    display: none;
-}
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--dark);
-    margin: 5px auto;
-    transition: all 0.3s;
-}
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-    background: var(--red);
-}
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
+
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    gap:16px;
-    background:#201b2c;
+    background:var(--dark);
+    border-top: 20px;
+    height: 100%;
+    padding: 100px ;   
+    color: #fff;
+}
+@media(min-width:576px)and(max-width:768px) {
+    body{
+        margin: none;
+    }
+    
+}
+
+
+.theme-light{
+    background: #fff;
+    color: #000;
+    
+    
+   
+}
+.theme-dark{
+    background:#000;
+    color: #fff;
+
 
 }
+
+
+
+.menu{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;;
+    background: linear-gradient(#0ABF04,#381686 ); 
+    margin: 2px solid white;
+    ;
+    
+}
+.menu li{
+    display: inline;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    
+    
+    
+   
+    
+    width: 100%;
+    height: 100px;
+}
+
+
+.menu a{
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+.menu a:hover{
+    color: var(--verdeclaro);
+    cursor: pointer;
+}
+.menu .logo{
+    font-size: 30px;
+}
+.fa-circle-half-stroke{
+   
+    margin:-25px;
+    border-radius: 50%;
+    height: 50%;
+    display: inline; 
+    position: relative;
+    color: #fff;
+
+ }
+ .fa-circle-half-stroke a:hover{
+    color: var(--verdeclaro);
+    cursor: pointer;
+ }
 
 /*Config geral dos cards*/
 
@@ -101,6 +116,7 @@ body{
     height: 260px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
+    z-index: -1;
 }
 
 /*Config das imagens do card*/
@@ -146,6 +162,63 @@ body{
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+}
+
+
+
+
+
+footer {
+    background:linear-gradient(#381686,#0ABF04 ) ;
+    color: #fff;
+    padding: 20px 0;
+    
+     
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #000000; /* Cor de destaque ao passar o mouse */
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--dark); /* Cor de destaque ao passar o mouse */
 }
 
 
