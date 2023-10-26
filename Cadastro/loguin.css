@@ -105,16 +105,22 @@ body{
    border-radius: 50%;
    height: 50%;
    display: inline;
-   margin-left: 70%; 
+    
+   color: #fff;
 }
 .fa-circle-half-stroke a:hover{
-   color: var(--verdeclaro);
+   color: var(--verde);
    cursor: pointer;
 }
 
 
 .text1{
    text-align: center;
+   font-size: 4rem;
+   margin-bottom: 1rem;
+   line-height: 4rem;
+   
+   text-shadow: 3px 3px 3px #0ABF04;
    
 }
 
@@ -225,6 +231,7 @@ footer {
    color: #fff;
    padding: 20px 0;
    margin-bottom: 0;
+   
    
    
 }

@@ -75,13 +75,7 @@ body{
     width: 100%;
     height: 100px;
 }
-button{
-    background: white;
-    border-radius: 50%;
-    height: 50%;
-    display: inline;
-    margin-left: 70%;   
-}
+
 
 .menu a{
     
@@ -98,6 +92,20 @@ button{
 .menu .logo{
     font-size: 30px;
 }
+.fa-circle-half-stroke{
+   
+    margin:-25px;
+    border-radius: 50%;
+    height: 50%;
+    display: inline; 
+    position: relative;
+    color: #fff;
+
+ }
+ .fa-circle-half-stroke a:hover{
+    color: var(--verdeclaro);
+    cursor: pointer;
+ }
 .conteiner{
     display: grid;
  
