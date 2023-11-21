@@ -92,9 +92,11 @@ body{
 .menu .logo{
     font-size: 30px;
 }
+
 .fa-circle-half-stroke{
    
-    margin:-25px;
+    margin: -20px;
+    margin-left: 0px;
     border-radius: 50%;
     height: 50%;
     display: inline; 
@@ -118,6 +120,24 @@ body{
     color: #ffffff;
     text-shadow:3px 3px 3px #0ABF04;
 }
+.titulo2{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    
+    text-shadow: 3px 3px 3px #0ABF04;
+}
+
+.tituloh2{
+    background:linear-gradient(#381686, black) ;
+    border-radius: 50px;
+    color: var(--verde);
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
 @media (max-width:400px) {
     .nos{
         
@@ -159,9 +179,7 @@ body{
         margin-right: -80px;     
  
     }
-    .conteiner{
-    
-    }
+
     
 }
 
@@ -170,25 +188,26 @@ h3{
     text-align: center;
     padding: 15px;
 }
-h2{
-    background:linear-gradient(#381686, black) ;
-    border-radius: 50px;
-    text-align: center;
-    padding: 15px;
+
+.text1 h5{
+    text-align: justify;
+    padding: 10px;
 }
 .figure{
-   border: solid white;
+   
    margin-bottom: 4rem;
 
+   display: flex;
+   justify-content: center;
+}
+#figLevel{
+    max-width: 80%;
+    border: solid white;
 }
 p{
     font-size:  22px;;
     margin-bottom: 4rem;
     
-}
-h2{
-    
-    color: var(--verde);
 }
 .col-2{
     text-align: center ;
