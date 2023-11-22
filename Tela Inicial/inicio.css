@@ -50,67 +50,84 @@ button{
 
 /*Configurações da barra de navegação*/
 
-.menu{
+.menu {
     position: fixed;
     top: 0%;
     left: 0;
-    width: 100%;;
-    background: linear-gradient(#0ABF04,#381686 ); 
-    margin: 2px solid white;
-    ;
-    
-}
-.menu li{
-    display: inline;
-    
+    width: 100%;
+    background: linear-gradient(#0ABF04, #381686);
+    border: 2px solid white;
 }
 
-.nav{
+.menu li {
+    display: inline;
+}
+
+.nav {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     position: fixed;
-    
-    
-    
-   
-    
     width: 100%;
     height: 100px;
 }
 
-
-.menu a{
-    
+.menu a {
     text-decoration: none;
     text-transform: uppercase;
     margin: 10px;
     color: #fff;
     font-size: 15px;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: var(--verdeclaro);
     cursor: pointer;
 }
-.menu .logo{
+
+.menu .logo {
     font-size: 30px;
 }
 
-.fa-circle-half-stroke{
-   
+.fa-circle-half-stroke {
     margin: -20px;
     margin-left: 0px;
     border-radius: 50%;
     height: 50%;
-    display: inline; 
+    display: inline;
     position: relative;
     color: #fff;
+}
 
- }
- .fa-circle-half-stroke a:hover{
+.fa-circle-half-stroke a:hover {
     color: var(--verdeclaro);
     cursor: pointer;
- }
+}
+
+
+@media screen and (max-width: 340px) {
+    .nav {
+        flex-direction: column; /* Empilhar os itens verticalmente */
+        align-items: center; /* Centralizar os itens */
+        height: auto; /* Ajustar a altura automaticamente conforme necessário */
+    }
+
+    .menu {
+        border: none; /* Remover a borda em telas menores */
+    }
+
+    .menu li {
+        display: block; /* Empilhar os itens verticalmente */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .menu .logo {
+        font-size: 24px; /* Reduzir o tamanho da fonte do logo */
+    }
+}
+
+
+ 
 /*Configurações do corpo principal*/
 
 /*Config geral*/
@@ -166,8 +183,14 @@ button{
 /*Imagens*/
 .home-img img{
     width: 100%;
+    border: none;
 }
-
+@media (max-width:1250px) {
+    .home-img{
+        display: none;
+    }
+    
+}
 
 
 
@@ -199,11 +222,31 @@ button{
         gap: -10px;
         transition: 0.3s;
     }
+    body{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .home-img{
+        display: none;
+    }
     .nav-menu.ativo{
         right: 0;
     }
     .nav-item{
         margin: 16px 0;
+    }
+    @media (max-width: 340px) {
+        .home {
+            padding: 30px 5%;
+        }
+    
+        .home-text .text-h1 {
+            font-size: 2rem;
+        }
+    
+        .home-btn {
+            padding: 10px 15px;
+        }
     }
 
     
@@ -230,6 +273,28 @@ button{
         width: 125%;
     }
 }
+
+.temaCurso{
+margin-bottom: 50px;
+
+margin-bottom: 1rem;
+line-height: 4rem;
+
+text-shadow: 3px 3px 3px #0ABF04;
+
+}
+
+.textCurso{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    text-shadow: 3px 3px 3px #0ABF04;
+}
+
+
 #container img{
     color: #fff;
     position: relative;
@@ -239,7 +304,7 @@ button{
     max-height: 250px;
     left: 0px;
     transition: 250ms;
-    z-index: 1;
+    z-index: -1;
     border-radius: 8px;
 }
 #container{
@@ -283,24 +348,26 @@ button:disabled{
     top: calc(50% - 25px);
     right: 10px;
 }
-
+img{
+    max-width: 80%;
+    border: solid black;
+}
 
 
 
 
 /* Estilos para o rodapé */
 footer {
-    background:linear-gradient(#381686,#0ABF04 ) ;
+    background: linear-gradient(#381686, #0ABF04);
     color: #fff;
     padding: 20px 0;
-    
-     
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha em telas menores */
     justify-content: space-between;
     align-items: center;
 }
@@ -314,10 +381,16 @@ footer {
 .footer-links ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Exibir os itens da lista horizontalmente */
 }
 
 .footer-links ul li {
-    margin-bottom: 10px;
+    margin-right: 20px; /* Adicionar um espaço entre os itens da lista */
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0; /* Remover a margem à direita do último item da lista */
+    margin-bottom: 10px; /* Adicionar espaço na parte inferior do último item da lista em telas menores */
 }
 
 .footer-links ul li a {
@@ -327,7 +400,11 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: #000000; /* Cor de destaque ao passar o mouse */
+    color: #000000;
+}
+
+.footer-social {
+    margin-top: 10px; /* Adicionar espaço acima dos ícones sociais em telas menores */
 }
 
 .footer-social a {
@@ -338,7 +415,25 @@ footer {
     transition: color 0.3s;
 }
 
-.footer-social a:hover {
-    color: var(--dark); /* Cor de destaque ao passar o mouse */
+.footer-social a:last-child {
+    margin-right: 0; /* Remover a margem à direita do último ícone social */
 }
 
+.footer-social a:hover {
+    color: var(--dark);
+}
+
+/* Adicione uma media query para ajustar o estilo em telas menores */
+@media screen and (max-width: 768px) {
+    .footer-links ul {
+        flex-direction: column; /* Empilhar os itens da lista verticalmente em telas menores */
+    }
+
+    .footer-links ul li {
+        margin-right: 0; /* Remover a margem à direita dos itens da lista em telas menores */
+    }
+
+    .footer-social {
+        margin-top: 20px; /* Aumentar o espaço acima dos ícones sociais em telas menores */
+    }
+}
