@@ -6,32 +6,34 @@
     <title>Escola de Tecnologia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
     crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/nos.css">
     <link rel="stylesheet" href="../img/Icons/css/all.min.css ">
 </head>
 <body>
     <header>
         <div class="nav">
-            <div class="menu">
-
-                <h1><a href="../Tela Inicial/Inicio.html" class="logo"> Next-level</a></h1>
-                
-
-                <ul>
-                    <li class="menu-item"><a href="../Cursos Disponiveis/Cursos.html">Cursos</a></li>
-                    <li class="menu-item"><a href="../Sobre nós/Untitled-1.html">Sobre nós</a></li>
-                    <li class="menu-item"><a href="../Cadastro/Cadatro.html">Login</a></li>
-                    <li class="menu-item"><a href="../Cadastro/loguin.html">Cadastro</a></li>
-
-                    
-                    <span onclick="trocarTema()"><i class="fa-solid fa-circle-half-stroke fa-flip" style="color: #ffffff;" ></i></span>
-                    <i class="bx bx-search"></i>
-                </ul>
-            </div>
-            
-
+          <div class="menu">
+            <h1><a href="../index.html" class="logo"> Next-level</a></h1>
+  
+            <ul>
+              <li class="menu-item"><a href="#cursos">Cursos</a></li>
+              <li class="menu-item"><a href="./page/nos.html">Sobre nós</a></li>
+              <li class="menu-item"><a href="./page/login.html">Login</a></li>
+              <li class="menu-item">
+                <a href="#contatos">Contatos</a>
+              </li>
+  
+              <span onclick="trocarTema()"
+                ><i
+                  class="fa-solid fa-circle-half-stroke fa-flip"
+                  style="color: #ffffff"
+                ></i
+              ></span>
+              <i class="bx bx-search"></i>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
     <div class="conteiner">
         <div class="nos">
             Sobre a Next-Level
@@ -87,7 +89,7 @@
         <div class="col-md-4">
             <div class="tituloh2"><h2>Evolua com a gente</h2></div>
             <figure class="figure">
-                <img id="figLevel" src="giphy.gif" class="figure-img img-fluid rounded" alt="Next-Level">
+                <img id="figLevel" src="../img/animacao/giphy.gif" class="figure-img img-fluid rounded" alt="Next-Level">
                 <figcaption class="figure-caption"></figcaption>
             </figure>
         </div>
@@ -100,32 +102,32 @@
     
     <div class="row">
         <div class="col-md-2">
-            <img src="./IMG/foco.png" alt="foco no aluno">
+            <img src="../img/animacao/IMGnos/foco.png" alt="foco no aluno">
             <p><strong>Foco no aluno</strong></p>
             <p>Todos nós trabalhamos para o aluno, temos paixão por educar.</p>
         </div>
         <div class="col-md-2">
-            <img src="./IMG/pessoas.png" alt="foco no aluno">
+            <img src="../img/animacao/IMGnos/pessoas.png" alt="foco no aluno">
             <p><strong>Pessoas</strong></p>
             <p>Sentimos orgulho em trabalhar aqui e acreditamos em meritocracia</p>
         </div>
         <div class="col-md-2">
-            <img src="./IMG/inovacao.png" alt="foco no aluno">
+            <img src="../img/animacao/IMGnos/inovacao.png" alt="foco no aluno">
             <p><strong>Inovação e simplicidade</strong></p>
             <p>O novo nos atrai, soluções simples também</p>
         </div>
         <div class="col-md-2">
-            <img src="./IMG/resultado.png" alt="foco no aluno">
+            <img src="../img/animacao/IMGnos/resultado.png" alt="foco no aluno">
             <p><strong>Resultados</strong></p>
             <p>Agimos em equipe, entregamos resultado certo</p>
         </div>
         <div class="col-md-2">
-            <img src="./IMG/confiabilidade.png" alt="foco no aluno">
+            <img src="../img/animacao/IMGnos/confiabilidade.png" alt="foco no aluno">
             <p><strong>Confiabilidade</strong></p>
             <p>Fazemos o certo, valorizamos a confiança de todos</p>
         </div>
         <div class="col-md-2">
-            <img src="./IMG/qualidade.png" alt="foco no aluno">
+            <img src="../img/animacao/IMGnos/qualidade.png" alt="foco no aluno">
             <p><Strong>Qualidade</Strong></p>
             <p>Oferecemos experiência educacional única para todos, com uso intenso de tecnologia.</p>
         </div>
@@ -133,7 +135,7 @@
 
 
 
-    <footer>
+    <footer name="contatos">
         <div class="footer-container">
             <div class="footer-logo">
                 <a href="../Tela Inicial/Inicio.html">Next-Level</a>
@@ -153,7 +155,9 @@
             </div>
         </div>
     </footer>
-        <script src="script.js"></script>
+
+
+        <script src="../js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
         crossorigin="anonymous"></script>    
 </body>

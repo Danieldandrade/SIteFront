@@ -265,10 +265,12 @@ footer {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 15px;
 }
 
 .footer-links ul li a:hover {
     color: #000000;
+    
 }
 
 .footer-social {

@@ -422,6 +422,22 @@ footer {
 .footer-social a:hover {
     color: var(--dark);
 }
+.submenu{
+    display: none;
+    position: absolute;
+}
+.principal{
+    vertical-align: top;
+}
+.principal:hover{
+    transition: 0.6s;
+}
+.principal:hover .submenu{
+    background: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+}
 
 /* Adicione uma media query para ajustar o estilo em telas menores */
 @media screen and (max-width: 768px) {
