@@ -425,6 +425,7 @@ footer {
 .submenu{
     display: none;
     position: absolute;
+    font-size: 15px;
 }
 .principal{
     vertical-align: top;

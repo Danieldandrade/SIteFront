@@ -281,6 +281,7 @@ footer {
    color: #fff;
    text-decoration: none;
    transition: color 0.3s;
+   font-size: 15px;
 }
 
 .footer-links ul li a:hover {
@@ -305,6 +306,25 @@ footer {
 
 .footer-social a:hover {
    color: var(--dark);
+}
+.principal{
+   vertical-align: top;
+   font-size: 15px;
+   padding-top: 22px;
+}
+.submenu{
+   display: none;
+   position: absolute;
+   font-size: 15px;
+}
+.principal:hover{
+   transition: 0.6s;
+}
+.principal:hover .submenu{
+   background: none;
+   color: #fff;
+   display: block;
+   padding: 15px;
 }
 
 /* Adicione uma media query para ajustar o estilo em telas menores */
