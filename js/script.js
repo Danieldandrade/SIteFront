@@ -35,6 +35,19 @@ if (urlCompleta.indexOf("login") != -1) {
 //carrocel
 
 window.onload = function () {
+
+  let iconMenu  = document.getElementById("iconMenu");
+  let menu2Id   = document.getElementById("menu2Id");
+  let closeMenu = document.getElementById("closeMenu");
+  iconMenu.onclick = function(){
+    menu2Id.style.left = "0%";
+    menu2Id.style.opacity = "1";
+  }
+  closeMenu.onclick = function(){
+    menu2Id.style.left = "-100%";
+    menu2Id.style.opacity = "0";
+  }
+
   let btnAvancar = document.getElementById("avancar");
   let btnVoltar = document.getElementById("voltar");
   let container = document.getElementById("container");

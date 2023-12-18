@@ -1,0 +1,197 @@
+*{
+    position: relative;
+    text-decoration: none;
+}
+.nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+/*Configurações da barra de navegação*/
+
+.menu {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    border: none;
+    /*border: 2px solid white;*/
+    li {
+        display: inline;
+    }
+    ul{
+        position: absolute;
+        width: 450px;
+        top: 15px;
+        right: 0;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+.menu2{
+    position: fixed;
+    width: 100%;
+    height: 100dvh;
+    background: #000;
+    top: 0;
+    left: -100%;
+    z-index: 12;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0;
+    transition: 0.7s;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    li{
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 25px;
+        border: 2px solid #fff;
+    }
+    li:hover{
+        background: #0ABF04;;
+    }
+    svg{
+        fill: #fff;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: 300ms;
+    }
+    svg:hover{
+        transform: rotate(90deg);
+    }
+}
+#iconMenu{
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    z-index: 11;
+    width: 23px;
+    height: 23px;
+    fill: #fff;
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+#temaBtn{
+    position: fixed;
+    top: 38px;
+    right: 80px;
+    z-index: 11;
+}
+body{
+    background: #222;
+}
+
+.menu a {
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    margin: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: var(--verdeclaro);
+    cursor: pointer;
+}
+
+.menu .logo {
+    font-size: 30px;
+}
+
+
+#container{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    gap:15px;
+    width: auto;
+    left: auto;
+    z-index: 5;
+    margin-bottom: 200px;
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    width: 100%;
+    margin: 0;
+    left: 0;
+    padding: 20px;
+    background: #000;
+    
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+    .cardFooter{
+        width: 350px;
+        min-width: 300px;
+
+        li{
+            cursor: pointer;
+        }
+        svg{
+            fill: #fff;
+            width: 25px;
+            height: 25px;
+            transition: 300ms;
+            cursor: pointer;
+        }
+        svg:hover{
+            fill: #0ABF04;
+        }
+    }
+    .cardFooter:first-of-type{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 45px;
+    }
+    .cardFooter:nth-child(2){
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        color: grey; 
+    }
+    .cardFooter:last-of-type{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 15px;
+        @media screen and (max-width: 1107px) {
+            padding-top: 25px;
+            justify-content: center;
+            align-items: flex-start;
+        }    
+        @media screen and (max-width: 756px) {
+            justify-content: flex-start;
+        }
+    }
+    @media screen and (max-width: 756px) {
+        justify-content: flex-start;
+    }
+}

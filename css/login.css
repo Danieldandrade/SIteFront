@@ -109,9 +109,11 @@ body{
 
 @media screen and (max-width: 340px) {
    .nav {
-       flex-direction: column; /* Empilhar os itens verticalmente */
-       align-items: center; /* Centralizar os itens */
-       height: auto; /* Ajustar a altura automaticamente conforme necessário */
+      position: relative;
+      z-index: 10;
+      flex-direction: column; /* Empilhar os itens verticalmente */
+      align-items: center; /* Centralizar os itens */
+      height: auto; /* Ajustar a altura automaticamente conforme necessário */
    }
 
    .menu {
@@ -155,6 +157,7 @@ body{
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgb(104, 255, 104);
+    z-index: 5;
  }
  
  form{
@@ -222,6 +225,8 @@ body{
     left: 0;
     padding: 10px 10px;
  }
+
+
  .fa-envelope{
     top:40px;
  }
@@ -245,66 +250,70 @@ footer {
    background: linear-gradient(#381686, #0ABF04);
    color: #fff;
    padding: 60px 0;
-}
 
-.footer-container {
-   max-width: 1200px;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha em telas menores */
-   justify-content: space-between;
-   align-items: center;
-}
+   .iconeRedes{
+      position: relative;
+   }  
+   .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha em telas menores */
+      justify-content: space-between;
+      align-items: center;
+   }
 
-.footer-logo a {
-   font-size: 1.5rem;
-   color: #ffffff;
-   text-decoration: none;
-}
+   .footer-logo a {
+      font-size: 1.5rem;
+      color: #ffffff;
+      text-decoration: none;
+   }
 
-.footer-links ul {
-   list-style: none;
-   padding: 0;
-   display: flex; /* Exibir os itens da lista horizontalmente */
-}
+   .footer-links ul {
+      list-style: none;
+      padding: 0;
+      display: flex; /* Exibir os itens da lista horizontalmente */
+   }
 
-.footer-links ul li {
-   margin-right: 20px; /* Adicionar um espaço entre os itens da lista */
-}
+   .footer-links ul li {
+      margin-right: 20px; /* Adicionar um espaço entre os itens da lista */
+   }
 
-.footer-links ul li:last-child {
-   margin-right: 0; /* Remover a margem à direita do último item da lista */
-   margin-bottom: 10px; /* Adicionar espaço na parte inferior do último item da lista em telas menores */
-}
+   .footer-links ul li:last-child {
+      margin-right: 0; /* Remover a margem à direita do último item da lista */
+      margin-bottom: 10px; /* Adicionar espaço na parte inferior do último item da lista em telas menores */
+   }
 
-.footer-links ul li a {
-   color: #fff;
-   text-decoration: none;
-   transition: color 0.3s;
-}
+   .footer-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+   }
 
-.footer-links ul li a:hover {
-   color: #000000;
-}
+   .footer-links ul li a:hover {
+      color: #000000;
+   }
 
-.footer-social {
-   margin-top: 10px; /* Adicionar espaço acima dos ícones sociais em telas menores */
-}
+   .footer-social {
+      position: relative;
+      margin-top: 10px; /* Adicionar espaço acima dos ícones sociais em telas menores */
+   }
+  
+   .footer-social a {
+      font-size: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: color 0.3s;
+   }
 
-.footer-social a {
-   font-size: 1.5rem;
-   color: #fff;
-   text-decoration: none;
-   margin-right: 10px;
-   transition: color 0.3s;
-}
+   .footer-social a:last-child {
+      margin-right: 0; /* Remover a margem à direita do último ícone social */
+   }
 
-.footer-social a:last-child {
-   margin-right: 0; /* Remover a margem à direita do último ícone social */
-}
-
-.footer-social a:hover {
-   color: var(--dark);
+   .footer-social a:hover {
+      color: var(--dark);
+   }
 }
 
 
