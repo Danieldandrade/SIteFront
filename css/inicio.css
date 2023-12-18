@@ -18,6 +18,7 @@
     --roxo:#201b2c;
     --verde:#0ABF04;
     --verdeclaro:#00ff88;
+    --bege:#dbd6d1;
 }
 
 /*Cor principal do site*/
@@ -360,7 +361,7 @@ img{
 footer {
     background: linear-gradient(#381686, #0ABF04);
     color: #fff;
-    padding: 20px 0;
+    padding: 60px 0;
 }
 
 .footer-container {
@@ -422,23 +423,7 @@ footer {
 .footer-social a:hover {
     color: var(--dark);
 }
-.submenu{
-    display: none;
-    position: absolute;
-    font-size: 15px;
-}
-.principal{
-    vertical-align: top;
-}
-.principal:hover{
-    transition: 0.6s;
-}
-.principal:hover .submenu{
-    background: none;
-    color: #fff;
-    display: block;
-    padding: 15px;
-}
+
 
 /* Adicione uma media query para ajustar o estilo em telas menores */
 @media screen and (max-width: 768px) {
