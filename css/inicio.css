@@ -30,14 +30,11 @@ body{
 }
 .theme-light{
     background: #fff;
-    color: #000;
-
-   
+    color: #000;  
 }
 .theme-dark{
-    background:#000;
+    background:#222;
     color: #fff;
-
 }
 button{
     background: white;
@@ -57,44 +54,23 @@ button{
 }
 
 .fa-circle-half-stroke a:hover {
-    color: var(--verdeclaro);
+    color:red;
     cursor: pointer;
 }
-
-
-@media screen and (max-width: 340px) {
-    .nav {
-        flex-direction: column; /* Empilhar os itens verticalmente */
-        align-items: center; /* Centralizar os itens */
-        height: auto; /* Ajustar a altura automaticamente conforme necessário */
-    }
-
-    .menu {
-        border: none; /* Remover a borda em telas menores */
-    }
-
-    .menu li {
-        display: block; /* Empilhar os itens verticalmente */
-        text-align: center; /* Centralizar o texto */
-    }
-
-    .menu .logo {
-        font-size: 24px; /* Reduzir o tamanho da fonte do logo */
-    }
-}
-
-
  
 /*Configurações do corpo principal*/
 
 /*Config geral*/
 .home{
+    position: relative;
+    top: -80px;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 10%;
+    margin-bottom: -100px;
 }
 .home-text{
     max-width: 37rem;
@@ -111,8 +87,7 @@ button{
 .home-text .text-h1{
     font-size: 4rem;
     margin-bottom: 1rem;
-    line-height: 4rem;
-    
+    line-height: 4rem;    
     text-shadow: 3px 3px 3px #0ABF04;
 }
 
@@ -243,12 +218,10 @@ text-shadow: 3px 3px 3px #0ABF04;
 
 .textCurso{
     font-size: 5rem;
-    margin-bottom: 1rem;
     line-height: 4rem;
     text-align: center;
     margin-bottom: 50px;
-    
-    text-shadow: 3px 3px 3px #0ABF04;
+    text-shadow: 3px 3px 9px #0ABF04;
 }
 
 

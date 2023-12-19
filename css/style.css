@@ -64,7 +64,7 @@
         border: 2px solid #fff;
     }
     li:hover{
-        background: #0ABF04;;
+        background: #0ABF04;
     }
     svg{
         fill: #fff;
@@ -96,29 +96,29 @@
     top: 38px;
     right: 80px;
     z-index: 11;
+    cursor: pointer;
 }
 body{
     background: #222;
 }
-
 .menu a {
     text-decoration: none;
     /*text-transform: uppercase;*/
     margin: 10px;
     color: #fff;
     font-size: 15px;
+    transition: 300ms;
 }
-
 .menu a:hover {
     color: var(--verdeclaro);
     cursor: pointer;
 }
-
 .menu .logo {
     font-size: 30px;
 }
-
-
+#cursos{
+    padding-top: 100px;
+}
 #container{
     position: relative;
     height: 250px;
@@ -131,8 +131,9 @@ body{
     z-index: 5;
     margin-bottom: 200px;
 }
-
-
+img{
+    border: none;
+}
 /* Estilos para o rodapé */
 footer {
     width: 100%;
@@ -194,4 +195,98 @@ footer {
     @media screen and (max-width: 756px) {
         justify-content: flex-start;
     }
+}
+.containerCardCursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    gap: 25px;
+    
+    .card-text{
+        color: gray;
+    }
+    .card{
+        --sizeCard: 275px; 
+        min-width: var(--sizeCard);
+        max-width: var(--sizeCard);
+        img{
+            min-width: 100%;
+        }
+    }
+}
+.carousel-inner{
+    @media screen and (max-width: 500px) {
+        margin-top: -50px;
+    }
+}
+#carouselExampleDark{
+    width: 100%;
+    left: 0%;
+
+    .carousel-inner{
+        .carousel-item{
+            img{
+                position: relative;
+                border-radius: 25px;
+                width: 50%;
+            }
+        }
+    }
+}
+.home{
+    .home-text{
+        margin-top: 40px;
+        max-width: 50%;        
+        @media screen and (max-width: 1250px) {
+            max-width: 100%;
+        }
+    }
+    .imgBannerHome{
+        min-width: 400px;
+    }
+}
+.carousel-indicators{
+    position: absolute;
+    @media screen and (max-width: 500px) {
+        bottom: -50px;
+    }    
+}
+#bntCarousel{
+    height: 25px;
+    width: 25px;
+    @media screen and (max-width: 500px) {
+        margin-top: -50px;
+    }
+}
+.containerbtnCarolsel{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top: 320px;
+    
+    #prev, #next{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border: none;
+        color: #000;
+        background: #000;
+        top: 0;
+
+        span{
+            color: #fff;
+        }
+    }
+    #prev{
+        margin-left: 0;
+        left: 50px;
+    }
+    #next{
+        right: 50px;
+    }
+}
+.fa-solid{
+    height: 40px;
 }

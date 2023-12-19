@@ -20,8 +20,8 @@ body{
     background:var(--dark);
     border-top: 20px;
     height: 100%;
-    padding: 100px ;   
     color: #fff;
+    overflow-x: hidden;
 }
 @media(min-width:576px)and(max-width:768px) {
     body{
@@ -72,10 +72,10 @@ body{
 
 .menu a {
     text-decoration: none;
-    text-transform: uppercase;
     margin: 10px;
     color: #fff;
     font-size: 15px;
+    font-weight: 500;
 }
 
 .menu a:hover {
@@ -128,7 +128,6 @@ body{
 }
 
 .nos {
-    background: linear-gradient(#381686, black);
     border-radius: 0 0 50px 50px;
     font-size: 90px;
     text-align: center;
@@ -146,7 +145,6 @@ body{
 }
 
 .tituloh2 {
-    background: linear-gradient(#381686, black);
     border-radius: 50px;
     color: var(--verde);
     text-align: center;
@@ -156,8 +154,7 @@ body{
 
 /* Adicionei as classes fictícias para as seções 'tituloh3', 'valores', e 'footer' */
 .tituloh3,
-.valores,
-footer {
+.valores {
     font-size: 35px;
     margin-top: 20px; /* Ajustei o espaço no topo */
     margin-left: -20px; /* Reduzi a margem à esquerda para melhorar o layout */
@@ -196,9 +193,59 @@ h3 {
    display: flex;
    justify-content: center;
 }
+.imgNos{
+    text-align: center;
+}
+#containerValores{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+
+    .cardValores{        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        flex-direction: column;
+        text-align: center;
+        vertical-align: top;
+        flex-wrap: wrap;
+        --tamanhoValoresCard: 200px;
+
+        p:first-of-type{
+            height: 70px;
+            max-width: var(--tamanhoValoresCard);
+            min-width: var(--tamanhoValoresCard);
+        }
+        p:last-of-type{
+            top: -50px;
+            height: auto;
+            max-width: var(--tamanhoValoresCard);
+            min-width: var(--tamanhoValoresCard);
+        }
+        img{
+            max-width: 100px;
+            min-width: 100px;
+            max-height: 100px;
+            min-height: 100px;
+            margin-bottom: 10px;
+        }
+        *{
+            text-align: center;
+        }
+    }    
+}
+
 #figLevel{
     max-width: 80%;
-    border: solid white;
+    border: solid grey thin;
+    padding: 10px;
+    border-radius: 0px;
+    width: 50%;
 }
 p{
     font-size:  22px;;
@@ -213,83 +260,9 @@ p{
 }
 
 .valores{
-    background:linear-gradient(#381686, black) ;
     border-radius: 50px;
     color: #0ABF04;
-    text-align: center;
-    
-}
-
-
-
-
-
-/* Estilos para o rodapé */
-footer {
-    background: linear-gradient(#381686, #0ABF04);
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha em telas menores */
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo a {
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Exibir os itens da lista horizontalmente */
-}
-
-.footer-links ul li {
-    margin-right: 20px; /* Adicionar um espaço entre os itens da lista */
-}
-
-.footer-links ul li:last-child {
-    margin-right: 0; /* Remover a margem à direita do último item da lista */
-    margin-bottom: 10px; /* Adicionar espaço na parte inferior do último item da lista em telas menores */
-}
-
-.footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 15px;
-}
-
-.footer-links ul li a:hover {
-    color: #000000;
-}
-
-.footer-social {
-    margin-top: 10px; /* Adicionar espaço acima dos ícones sociais em telas menores */
-}
-
-.footer-social a {
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-    transition: color 0.3s;
-}
-
-.footer-social a:last-child {
-    margin-right: 0; /* Remover a margem à direita do último ícone social */
-}
-
-.footer-social a:hover {
-    color: var(--dark);
+    text-align: center;   
 }
 .principal{
     vertical-align: top;
