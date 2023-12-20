@@ -1,0 +1,28 @@
+/*Fontes utilizadas no site*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap");
+/*Configuração geral do site*/
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+/*Variações de cores para utilizar no site*/
+:root {
+  --red: #d63a25;
+  --white: #fff;
+  --dark: #222;
+  --blue: #00008b;
+  --roxo: #201b2c;
+  --verde: #0abf04;
+  --verdeclaro: #00ff88;
+  --bege: #dbd6d1;
+}
+
+/*Cor principal do site*/
+body {
+  background: var(--dark);
+  border-top: 20px;
+  height: 100%;
+  color: #fff;
+}
