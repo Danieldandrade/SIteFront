@@ -12,6 +12,7 @@ function trocarTema() {
   }
 }
 
+
 //cadastro
 
 var formEntrar = document.querySelector("#entrar");
@@ -102,3 +103,4 @@ window.onload = function () {
     }, 250);
   });
 };
+
