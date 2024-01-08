@@ -37,16 +37,13 @@ body{
    
 }
 
- .theme-light{
+.theme-light{
    background: #fff;
-   color: #000;
-
-  
+   color: #222;  
 }
 .theme-dark{
-   background:#000;
+   background:#222;
    color: #fff;
-
 }
 /*Configurações da barra de navegação*/
 

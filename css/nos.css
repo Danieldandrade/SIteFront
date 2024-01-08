@@ -34,20 +34,12 @@ body{
 
 .theme-light{
     background: #fff;
-    color: #000;
-    
-    
-   
+    color: #222;  
 }
 .theme-dark{
-    background:#000;
+    background:#222;
     color: #fff;
-
-
 }
-
-
-
 .menu {
     position: fixed;
     top: 0%;
@@ -128,10 +120,10 @@ body{
 }
 
 .nos {
-    border-radius: 0 0 50px 50px;
+  
     font-size: 90px;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 3px 3px 3px #0ABF04;
     margin-top: 20px; /* Adicionei um espaço no topo para melhorar o layout */
 }

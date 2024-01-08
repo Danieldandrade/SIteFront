@@ -224,7 +224,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin: 100px;
   gap: 25px;
 
@@ -235,9 +235,14 @@ footer {
     --sizeCard: 275px;
     min-width: var(--sizeCard);
     max-width: var(--sizeCard);
+    padding-bottom: 30px;
     img {
       min-width: 100%;
     }
+  }
+  #saibamaisCursos{
+    position: absolute;
+    bottom: 15px;
   }
 }
 .carousel-inner {
