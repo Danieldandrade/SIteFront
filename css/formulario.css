@@ -102,7 +102,7 @@ button{
     padding: 15px 45px;
     background: var(--verde);
     color: var(--black);
-    border-radius: 10px;
+    border-radius: 0px;
     font-weight: 700;
     transition: all 0.5s;
 }
@@ -183,22 +183,24 @@ button{
    }
 .form{
 	overflow: hidden;
-	background-color: rgb(206, 216,205);
+	background-color: rgb(241, 241, 241);
 	width: 50%;
 	height: 70%;
-	margin:50px auto ;
-	text-align: center;
-	border-radius: 10px;
-	box-shadow:0 0 20px rgb(104, 255, 104);
+	margin:50px auto;
+    margin-top: 0;
+    padding: 50px;
+	border-radius: 5px;
+	box-shadow:0 0 20px rgb(0, 0, 0);
 }
 h1{
-	text-shadow: 3px 3px 3px #0abf04;
+    color: #000;
+    text-align: center;
 }
 h2{
-	text-shadow: 3px 3px 3px #0abf04;
+    color: #000;
 }
 input,select{
-	border-radius: 10px;
+	border-radius: 0px;
 	height: 30px;
 	border: none;
 	margin: 5px;
@@ -206,14 +208,14 @@ input,select{
 
 .cidade{
 	margin-top:200px;
-	border-radius: 10px;
+	border-radius: 0px;
 	height: 30px;
 	border: none;
 	margin: 5px;
 	
 }
 .sobrenome{
-	border-radius: 10px;
+	border-radius: 0px;
 	height: 30px;
 	border: none;
 	margin: 5px;
@@ -222,9 +224,9 @@ input,select{
 input[type="radio"]{
 	height: 12px;
 }
-input[type="submit"]{
+input[type="submit"], input[type="reset"]{
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 0px;
 	border: none;
 	width: 80px;
 	height: 35px;
@@ -233,7 +235,7 @@ input[type="submit"]{
 }
 input[type="button"]{
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 0px;
 	border: none;
 	width: 80px;
 	height: 35px;
@@ -254,4 +256,21 @@ input[type="button"]{
 	input, label{ 
 	margin: 5px;
 	}   
+}
+label{
+    color: black;
+}
+
+input[type="text"], input[type="email"], input[type="date"],select{
+    width: 300px;
+    padding-left: 5px;
+    border: thin solid #000;
+}
+label{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+.optionSexo{
+    margin-top: 0px;
 }
