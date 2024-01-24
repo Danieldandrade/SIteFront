@@ -222,13 +222,16 @@ body{
 
 
  .fa-envelope{
-    top:40px;
+    top:43px;
+ }
+ .fa-address-card{
+    top:43px;
  }
  .fa-lock{
-    top: 114px;
+    top: 122px;
  }
  .fa-lock2{
-    top: 190px;
+    top: 195px;
  }
  img{
    position: relative;
