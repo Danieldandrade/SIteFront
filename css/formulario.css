@@ -11,13 +11,14 @@
 }
 /*Variações de cores para utilizar no site*/
 :root{
-    --red:#d63a25;
+    --preto:#000;
+    --roxo:#201b2c;
     --white:#fff;
     --dark:#222;
-    --blue:#00008b;
-    --roxo:#201b2c;
     --verde:#0ABF04;
     --verdeclaro:#00ff88;
+    --red:#d63a25;
+    --blue:#00008b;
     --bege:#dbd6d1;
 }
 

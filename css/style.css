@@ -21,6 +21,12 @@
 }
 
 /*Configurações da barra de navegação*/
+.wellcome{
+  display:flex;
+  justify-content:  center;
+
+  color:#dbd6d1;
+}
 
 .menu {
   position: fixed;
